@@ -3,23 +3,23 @@ import Npc from './npc.js';
 
 export const diceRoll = () => {
   return Math.floor(Math.random() * 10) + 1;
-}
+};
 
 export const findAttackPower = (newCharacter) => {
   let level = newCharacter.level;
   const attackPower = level + diceRoll();
   return attackPower;
-}
+};
 
 export const findNpcPower = () => {
   let npcPower = diceRoll();
   return npcPower;
-}
+};
 
 
-  export let ratNpc = new Npc("Rat", 10);
-  export let knightNpc = new Npc("Knight", 20);
-  export let minotaurNpc = new Npc("Minotaur", 30);
+export let ratNpc = new Npc("Rat", 10);
+export let knightNpc = new Npc("Knight", 20);
+export let minotaurNpc = new Npc("Minotaur", 30);
 
 export const attackNpc = (newCharacter) => {
   let level = newCharacter.level;
@@ -62,4 +62,4 @@ export const attackNpc = (newCharacter) => {
       return newCharacter.health;
     }
   }
-}
+};
