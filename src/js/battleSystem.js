@@ -11,22 +11,29 @@ export const findAttackPower = (newCharacter) => {
   return attackPower;
 }
 
+export const findNpcPower = () => {
+  let npcPower = diceRoll();
+  return npcPower;
+}
+
+
   let ratNpc = new Npc("Rat", 10);
   let knightNpc = new Npc("Knight", 20);
   let minotaurNpc = new Npc("Minotaur", 30);
 
   export const attackNpc = (newCharacter) => {
     let level = newCharacter.level;
-    // let power = findAttackPower(newCharacter);
+    let npcPower = findNpcPower();
+    let playerPower = findAttackPower(newCharacter);
       if (level === 1) {
-        let npcPower = diceRoll();
-        return npcPower;
-        // if (power > npcPower) {
-        //   ratNpc.health -= power;
-        //   return ratNpc.health;
-        // } else {
-        //   newCharacter.health -= npcPower;
-        //   return newCharacter.health;
+        if (playerPower > npcPower) {
+          ratNpc.health -= power;
+          return ratNpc.health;
+        } else {
+          newCharacter.health -= npcPower;
+          return newCharacter.health;
         }
+      } else {
+      
       }
-  // }
+  }

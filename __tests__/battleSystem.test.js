@@ -1,4 +1,4 @@
-import { attackNpc, diceRoll, findAttackPower } from '../src/js/battleSystem.js';
+import { attackNpc, diceRoll, findAttackPower, findNpcPower } from '../src/js/battleSystem.js';
 import Character from '../src/js/character.js';
 
 describe('diceRoll', () => {
@@ -20,12 +20,12 @@ describe('findAttackPower', () => {
   });
 });
 
-describe('attackNpc', () => {
+describe('findNpcPower', () => {
 
   test('should return a random dice roll for npc power', () => {
-    let newCharacter = new Character ("Jack", "Mage");
-    let npcPower = attackNpc(newCharacter);
+    let npcPower = findNpcPower();
     expect(npcPower).toBeGreaterThanOrEqual(1);
     expect(npcPower).toBeLessThanOrEqual(10);
   });
 });
+
