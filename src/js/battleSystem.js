@@ -48,6 +48,18 @@ export const attackNpc = (newCharacter) => {
       return knightNpc.health;
     } else {
       newCharacter.health -= npcPower;
+      return newCharacter.health;
+    }
+  } else {
+    if (playerPower > npcPower) {
+      minotaurNpc.health -= playerPower;
+      if (minotaurNpc.health < 0) {
+        minotaurNpc.health = 0;
+      }
+      return minotaurNpc.health;
+    } else {
+      newCharacter.health -= npcPower;
+      return newCharacter.health;
     }
   }
 }

@@ -47,5 +47,15 @@ describe('attackNpc', () => {
   expect(newCharacter.health).toBeLessThanOrEqual(20);
   
   });
+
+  test('should return player health subtracted by npc roll or npc health subtracted by player roll', () => {
+    let newCharacter = new Character ("Jack", "Mage");
+    newCharacter.level = 3;
+    attackNpc(newCharacter);
+    expect(minotaurNpc.health).toBeGreaterThanOrEqual(17);
+    expect(minotaurNpc.health).toBeLessThanOrEqual(30);
+    expect(newCharacter.health).toBeGreaterThanOrEqual(10);
+    expect(newCharacter.health).toBeLessThanOrEqual(20);
+  });
 });
 
