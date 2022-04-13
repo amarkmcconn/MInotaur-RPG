@@ -18,6 +18,10 @@ beforeEach(() => {
     expect(character.attribute).toEqual("Intelligence");
   });
 
-  
+  test('should receive Warrior as class type and change attribute to Strength', () => {
+    let newCharacter = new Character("Mike", "Warrior")
+    newCharacter.classPicker();
+    expect(newCharacter.attribute).toEqual("Strength");
+  });
 
 });
