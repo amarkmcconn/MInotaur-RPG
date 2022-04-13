@@ -18,5 +18,4 @@ describe('findAttackPower', () => {
     expect(attackPower).toBeGreaterThanOrEqual(2);
     expect(attackPower).toBeLessThanOrEqual(11);
   });
-
 });
