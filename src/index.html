@@ -5,10 +5,15 @@
 </head>
 <body>
   <div class="container">
-    <h1>A Minotaur Is Not A Role Model</h1>
+    <div class="jumbotron">
+      <h1>A Minotaur Is Not A Role Model</h1>
+      <p id="directions">
+        Create your character! Pick your name and class! After you pick your class, fight each of the monsters until you beat them all! You will level up every 5xp, this will add 1 to each of your attack hits! Use your potions(you only get 3!) for 3hp added!
+      </p>
+    </div>
     <form id="character-sheet">
       <label for="character-name">Enter Character's Name</label>
-      <input id="character-name" type="text"> <br>
+      <input id="character-name" type="text" required> <br>
       <br><label for="character-class">Choose Your Character's Class</label>
       <br><select class="form-control" id="character-class">
         <option>Mage</option>
@@ -44,9 +49,24 @@
         <input id="potions-to-be-used" type="number" min="1" max="3" >
         <button type="submit">Use Potions</button>
       </form>
+      <button id="fight" type="click">FIGHT</button>  
     </div>
-
-
+    <div id="npc-display">
+      <p id="npc-name">
+      
+      <p>
+      <p id="npc-health">
+      
+      <p>    
+    </div>
+    <div id="game-over-display">
+      <h1 id="game-over">
+    
+      </h1>
+      <button onClick="history.go(0);" class="hidden" id="restart">Restart Game</button>
+    </div>
+    <img src="/assets/images/R.jpg" alt="such a pup!">
   </div>
+  
 </body>
 </html>

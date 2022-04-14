@@ -1,8 +1,30 @@
-/* body {
-  background-image: url(../images/R.jpg)
-} */
+#npc-display {
+  display: none;
+}
 
 #char-display {
   display: none;
 }
 
+#game-over-display {
+  display: none;
+}
+
+#directions {
+  text-align: center;
+}
+
+body {
+  background-image: url(/assets/images/R.jpg);
+}
+
+h1 {
+  text-align: center;
+}
+
+.jumbotron {
+  padding: 2rem 1rem;
+  margin-bottom: 2rem;
+  background-color: lightgreen;
+  border-radius: 0.3rem;
+}

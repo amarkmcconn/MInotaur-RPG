@@ -1,4 +1,4 @@
- # _A Minotuar is a not a role model RPG_
+ # _A Minotaur is a not a role model RPG_
 #### By _**Mark McConnell & Caleb Coughenour**_
 #### _This is a web application that allows a user to create an RPG character and fight monsters_
 ## Technologies Used
@@ -9,7 +9,7 @@
 ## Description
 _{This is a detailed description of your application. Give as much detail as needed to explain what the application does as well as any other information you want users or other developers to have.}_
 ## Setup/Installation Requirements
-* _Clone this repository to designated folder_
+* _Clone this repository to your desktop_
 * _$ npm Install_
 * _$ run build_
 * _format_
