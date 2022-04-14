@@ -44,8 +44,7 @@ describe('attackNpc', () => {
   expect(knightNpc.health).toBeGreaterThanOrEqual(8);
   expect(knightNpc.health).toBeLessThanOrEqual(20);
   expect(newCharacter.health).toBeGreaterThanOrEqual(10);
-  expect(newCharacter.health).toBeLessThanOrEqual(20);
-  
+  expect(newCharacter.health).toBeLessThanOrEqual(20);  
   });
 
   test('should return player health subtracted by npc roll or npc health subtracted by player roll', () => {

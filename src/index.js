@@ -1,13 +1,12 @@
-
-
-
 import $ from 'jquery';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
 import Character from '../src/js/character.js';
-import Npc from '../src/js/npc.js'
+import Npc from '../src/js/npc.js';
 import { attackNpc, diceRoll, findAttackPower, findNpcPower, ratNpc, knightNpc, minotaurNpc } from '../src/js/battleSystem.js';
+import usePotion from '../src/js/potions.js';
+
 
 $(document).ready(function() {
 $('#character-sheet').submit(function(e) {
@@ -17,7 +16,14 @@ $('#character-sheet').submit(function(e) {
   let playerCharacter = new Character(charName, charClass);
   console.log(playerCharacter);
 });
-});
+
+
+// $('#potion-form').submit(function() {
+// let potionAmount = $pareseInt(('#potion-use-count).val());
+// usePotion(potionAmounts);
+// newCharacter.potions -= potionAmount;
+// });
+// });
 
 // form input, input
 // let newCharacter = new Character(input, input)

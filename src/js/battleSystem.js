@@ -28,6 +28,7 @@ export const attackNpc = (newCharacter) => {
   if (level === 1) {
     if (playerPower > npcPower) {
       ratNpc.health -= playerPower;
+      newCharacter.xp += 2;
       if (ratNpc.health < 0) {
         ratNpc.health = 0;
       }
@@ -42,6 +43,7 @@ export const attackNpc = (newCharacter) => {
   } else if (level === 2) {
     if (playerPower > npcPower) {
       knightNpc.health -= playerPower;
+      newCharacter.xp += 2;
       if (knightNpc.health < 0) {
         knightNpc.health = 0;
       }
@@ -53,6 +55,7 @@ export const attackNpc = (newCharacter) => {
   } else {
     if (playerPower > npcPower) {
       minotaurNpc.health -= playerPower;
+      newCharacter.xp += 2;
       if (minotaurNpc.health < 0) {
         minotaurNpc.health = 0;
       }
