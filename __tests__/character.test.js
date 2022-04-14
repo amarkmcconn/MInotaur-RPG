@@ -34,4 +34,17 @@ beforeEach(() => {
     character.usePotion(1);
     expect(character.health).toEqual(23);    
   });
+
+  test('should not increase level by 1 if xp is greater than or equal to 5', () => {
+    character.xp = 4;
+    character.levelUp();
+    expect(character.level).toEqual(1);
+  });
+  
+  test('should increase level by 1 if xp is greater than or equal to 5', () => {
+    character.xp = 5;
+    character.levelUp();
+    expect(character.level).toEqual(2);
+  });
+
 });

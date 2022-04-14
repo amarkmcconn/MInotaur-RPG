@@ -17,12 +17,18 @@ export default class Character  {
     } else {
       this.attribute = "Stealth";
     }
-  };
-
-
+  }
 
   usePotion(amount) {
     return (this.health += (amount * 3));
-  };
-};
+  }
 
+  levelUp() {
+    if (this.xp >= 5) {
+      this.level += 1;
+      this.xp -= 5;
+    } else {
+      this.level +=0;
+    }
+  }
+}
