@@ -30,4 +30,8 @@ beforeEach(() => {
     expect(newCharacter.attribute).toEqual("Stealth");
   });
 
+  test('add 3hp to character health if one potion is entered', () => {
+    character.usePotion(1);
+    expect(character.health).toEqual(23);    
+  });
 });

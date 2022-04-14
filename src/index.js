@@ -15,8 +15,8 @@ $('#character-sheet').submit(function(e) {
   const charClass = $('#character-class').val();
   let playerCharacter = new Character(charName, charClass);
   console.log(playerCharacter);
+  });
 });
-
 
 // $('#potion-form').submit(function() {
 // let potionAmount = $pareseInt(('#potion-use-count).val());
@@ -29,4 +29,3 @@ $('#character-sheet').submit(function(e) {
 // let newCharacter = new Character(input, input)
 // newCharacter.classPicker();
 // battleSystem(newCharacter);
-

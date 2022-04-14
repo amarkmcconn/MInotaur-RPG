@@ -17,6 +17,12 @@ export default class Character  {
     } else {
       this.attribute = "Stealth";
     }
-  }
-}
+  };
+
+
+
+  usePotion(amount) {
+    return (this.health += (amount * 3));
+  };
+};
 
